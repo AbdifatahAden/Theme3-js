@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>first page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<body>
+    <h1>How to Auto Calculate Price in Javascript</h1>
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="addictionBy()" Value="Addiction" />
+        <input type="button" onClick="diffrenceBy()" Value="Difference" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+        </form>
+        <p>The Result is : <br>
+        <span id = "result"></span>
+        </p>
+
+        <script>
+            function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+
+function addictionBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value*1;
+        num2 = document.getElementById("secondNumber").value*1;
+document.getElementById("result").innerHTML = (num1) + (num2);
+}
+
+function diffrenceBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 - num2;
+}
+        </script>
+        <body>
+</html>
+</body>
+</html>
